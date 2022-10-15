@@ -27,7 +27,7 @@ secrets = json.load(open(os.path.join(SECRET_DIR, "secret.json")))
 SECRET_KEY = secrets["DJANGO_SECRET_KEY"]
 
 # static
-STATICFILES = [BASE_DIR / "static"]
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # template
 TEMPLATE_DIR = BASE_DIR / "templates"
